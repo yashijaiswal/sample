@@ -8,7 +8,6 @@ phases:
   pre_build:
     commands:
     - echo In the pre_build phase of sample app
-    - cd sample
     - pwd
   build:
     commands:
