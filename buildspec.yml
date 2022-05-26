@@ -9,11 +9,10 @@ phases:
     commands:
     - echo In the pre_build phase of sample app
     - pwd
+    - ls -lrt
   build:
     commands:
     - echo Build started on `date`
-    - mvn clean install
-    - nohup mvn spring-boot:run &
   post_build:
     commands:
     - echo Build completed on `date`
